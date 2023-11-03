@@ -18,7 +18,7 @@ jobs:
         run: cmake --build build
 
       - name: Build the  documentation
-        run: cmake --build build --target graphviz
+        run: cmake --build build --target doxygen
 
       # - name: Test the project
       #   run: ctest --test-dir build
