@@ -18,5 +18,8 @@ add_subdirectory(src)
 # The executable code is here
 add_subdirectory(app)
 
+# documentation
+add_subdirectory(docs)
+
 # installation
 install(TARGETS ${PROJECT_NAME} DESTINATION ${PROJECT_SOURCE_DIR}/bin)
