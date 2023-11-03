@@ -32,8 +32,6 @@ The dependencies for this tool are:
 The tool can be compiled as follows:
 
 ```
-mkdir build && cd build
-cmake ..
-cmake --build . --target install
-cmake --build . --target doxygen
+cmake -S . -B build
+cmake --build build --target doxygen --target install
 ```
