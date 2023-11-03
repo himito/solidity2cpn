@@ -23,8 +23,11 @@ set(DOT_IMAGE_FORMAT svg)
 set(DOT_TRANSPARENT YES)
 set(DOXYGEN_HTML_EXTRA_STYLESHEET
   ${doxygen-awesome-css_SOURCE_DIR}/doxygen-awesome.css)
-set(DOXYGEN_HTML_OUTPUT ${PROJECT_BINARY_DIR}/docs)
+set(DOXYGEN_HTML_OUTPUT ${PROJECT_BINARY_DIR}/docs/html)
 
 doxygen_add_docs(doxygen
   ${PROJECT_SOURCE_DIR}/src
   COMMENT "Generate HTML documenation")
+
+# Copy documentation
+install(DIRECTORY ${DOXYGEN_HTML_OUTPUT} DESTINATION ${INSTALL_FOLDER})

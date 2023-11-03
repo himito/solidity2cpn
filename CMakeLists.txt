@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# installation folder
+set(INSTALL_FOLDER ${PROJECT_SOURCE_DIR}/bin)
+
 # Third-party libraries
 add_subdirectory(third-party)
 
@@ -20,6 +23,3 @@ add_subdirectory(app)
 
 # documentation
 add_subdirectory(docs)
-
-# installation
-install(TARGETS ${PROJECT_NAME} DESTINATION ${PROJECT_SOURCE_DIR}/bin)

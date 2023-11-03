@@ -15,7 +15,10 @@ jobs:
         uses: threeal/cmake-action@v1.3.0
 
       - name: Build the project
-        run: cmake --build build --target doxygen
+        run: cmake --build build
+
+      - name: Build the  documentation
+        run: cmake --build build --target graphviz
 
       # - name: Test the project
       #   run: ctest --test-dir build

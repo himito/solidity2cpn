@@ -33,6 +33,7 @@ The tool can be compiled as follows:
 
 ```
 mkdir build && cd build
-cmake -DBUILD_DOCS=ON ..
+cmake ..
 cmake --build . --target install
+cmake --build . --target doxygen
 ```
